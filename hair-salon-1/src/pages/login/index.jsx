@@ -43,7 +43,7 @@ function LoginPage() {
   const dispatch = useDispatch(); // Store data to redux
   const handleLogin = async (values) => {
     try {
-      const response = await api.post("/login", values);
+      const response = await api.post("/api/login", values);
       console.log(response);
       const { role, token, tokenExpiration } = response.data;
       console.log(role);
