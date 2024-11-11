@@ -53,17 +53,6 @@ function OverviewAdmin() {
                     <Bar dataKey="Account" fill="#6A9C89" />
                 </BarChart>
             </div>
-
-            {/* Monthly Revenue Funnel Chart */}
-            <div className="bg-white p-4 rounded shadow-md">
-                <h2 className="text-center text-lg font-semibold mb-4">Doanh thu tháng</h2>
-                <FunnelChart width={400} height={300}>
-                    <Tooltip />
-                    <Funnel dataKey="value" data={monthlyRevenue} isAnimationActive>
-                        <LabelList position="right" fill="#000" stroke="none" dataKey="name" />
-                    </Funnel>
-                </FunnelChart>
-            </div>
         </div>
     );
 }
